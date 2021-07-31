@@ -9,6 +9,7 @@ connectDB();
 
 
 // express middleware
+app.use(express.static('public'))
 app.use(express.json());
 app.use('/blog', require('./routes/blogPage'));
 app.use('/user', require('./routes/user'))
